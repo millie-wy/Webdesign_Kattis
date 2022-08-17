@@ -1,7 +1,15 @@
-import "./Stylesheets/Home.css";
+// import "./Stylesheets/Home.css";
+
+import HomeOffer from "./Home/HomeOffer";
+import HomeProduct from "./Home/HomeProducts";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <HomeOffer />
+      <HomeProduct />
+    </div>
+  );
 };
 
 export default Home;

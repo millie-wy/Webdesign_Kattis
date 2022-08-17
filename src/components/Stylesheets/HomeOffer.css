@@ -1,0 +1,103 @@
+#offer-page {
+  width: 100vw;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 40px 5%;
+}
+
+/* presentation card */
+.presentation-card {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.pcard-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: 0 40%;
+}
+
+.pcard-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  text-align: center;
+  width: 500px;
+}
+
+.pcard-title {
+  margin: auto;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-block: 30px;
+  max-width: 500px;
+}
+
+.explore-button {
+  font-size: 26px;
+  color: rgb(192, 220, 175);
+  background: rgb(66, 104, 88);
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0.9;
+  border: none;
+}
+
+/* offer cards */
+#offers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 2%;
+}
+
+.offer-card {
+  width: 32%;
+  height: 250px;
+  position: relative;
+}
+
+.ocard-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: 0 40%;
+}
+
+.ocard-title {
+  position: absolute;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  width: 80%;
+  max-width: 250px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+/* extra styles for max-width 1024px */
+
+@media (max-width: 1024px) {
+}
+
+/* extra styles for max-width 640px */
+
+@media (max-width: 640px) {
+}
+
+/* extra styles for max-width 450px */
+
+@media (max-width: 450px) {
+}

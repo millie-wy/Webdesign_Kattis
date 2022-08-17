@@ -1,4 +1,5 @@
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 import basket from "../assets/Icons/basket.png";
 import menu from "../assets/Icons/menu.png";
 import profile from "../assets/Icons/profile.png";
@@ -8,24 +9,24 @@ import "./Stylesheets/Header.css";
 const Header = () => {
   const isDesktop = useMediaQuery({ query: "(min-width: 1024px" });
   //   const isTablet = useMediaQuery({ query: "(max-width: 1024px" });
-  //   const isMobile = useMediaQuery({ query: "(max-width: 640px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 640px" });
 
-  return isDesktop ? (
+  return (
     <div id="header">
-      <img src={logo} alt="Kattis" id="logo" />
-      <div className="search_block" />
-      <div id="icons">
-        <img src={profile} alt="my Kattis" className="profile" />
-        <img src={basket} alt="cart" className="basket" />
-      </div>
-    </div>
-  ) : (
-    <div id="header">
-      <div id="menu-div">
-        <img src={menu} alt="Kattis" className="menu" />
-        <img src={logo} alt="Kattis" id="logo" />
-      </div>
-      <div id="icons">
+      {isMobile ? (
+        <div id="menu-div">
+          <img src={menu} alt="menu" className="menu" />
+          <Link to="/">
+            <img src={logo} alt="Kattis" id="logo-s" />
+          </Link>
+        </div>
+      ) : (
+        <Link to="/">
+          <img src={logo} alt="Kattis" id="logo-s" />
+        </Link>
+      )}
+      {isDesktop ? <div className="search-block" /> : null}
+      <div id="header-icons">
         <img src={profile} alt="my Kattis" className="profile" />
         <img src={basket} alt="cart" className="basket" />
       </div>

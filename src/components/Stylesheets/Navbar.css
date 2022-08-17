@@ -1,0 +1,23 @@
+#menubar {
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 46px;
+  background: rgb(66, 104, 88);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  place-content: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.pink {
+  color: rgb(214, 154, 197);
+}
