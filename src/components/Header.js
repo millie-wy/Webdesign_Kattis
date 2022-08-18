@@ -8,12 +8,12 @@ import "./Stylesheets/Header.css";
 
 const Header = () => {
   const isDesktop = useMediaQuery({ query: "(min-width: 1024px" });
-  //   const isTablet = useMediaQuery({ query: "(max-width: 1024px" });
+  const isTablet = useMediaQuery({ query: "(max-width: 1024px" });
   const isMobile = useMediaQuery({ query: "(max-width: 640px" });
 
   return (
     <div id="header">
-      {isMobile ? (
+      {isMobile || isTablet ? (
         <div id="menu-div">
           <img src={menu} alt="menu" className="menu" />
           <Link to="/">

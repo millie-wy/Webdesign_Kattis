@@ -41,14 +41,16 @@
 }
 
 .explore-button {
+  font-family: houschka-pro, sans-serif;
   font-size: 26px;
   color: rgb(192, 220, 175);
   background: rgb(66, 104, 88);
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 7px 20px;
   border-radius: 10px;
   opacity: 0.9;
   border: none;
+  cursor: pointer;
 }
 
 /* offer cards */
@@ -79,7 +81,7 @@
   font-size: 30px;
   font-weight: bold;
   width: 80%;
-  max-width: 250px;
+  max-width: 245px;
   text-align: center;
   left: 50%;
   top: 50%;
@@ -90,14 +92,127 @@
 /* extra styles for max-width 1024px */
 
 @media (max-width: 1024px) {
+  .pcard-title {
+    font-size: 2.2rem;
+    max-width: 420px;
+  }
+
+  .explore-button {
+    font-size: 24px;
+  }
+
+  .offer-card {
+    height: 200px;
+  }
+
+  .ocard-img {
+    height: 200px;
+  }
+
+  .ocard-title {
+    font-size: 24px;
+    max-width: 180px;
+  }
 }
 
 /* extra styles for max-width 640px */
 
 @media (max-width: 640px) {
+  .presentation-card {
+    height: 300px;
+  }
+
+  .pcard-img {
+    height: 300px;
+  }
+
+  .pcard-title {
+    font-size: 1.8rem;
+    max-width: 340px;
+  }
+
+  .explore-button {
+    font-size: 20px;
+  }
+
+  #ocards-mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .ocards-mobile-l {
+    display: flex;
+    width: 48%;
+  }
+
+  .ocard-mobile-l {
+    width: 48%;
+    height: 320px;
+    position: relative;
+  }
+
+  .ocard-mobile-l-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: 0 40%;
+  }
+
+  .ocards-mobile-r {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 20px;
+  }
+
+  .ocard-mobile-r {
+    width: 100%;
+    height: 150px;
+    position: relative;
+  }
+
+  .ocard-mobile-r-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+
+  .offer-card {
+    height: 120px;
+  }
+
+  .ocard-img {
+    height: 120px;
+  }
+
+  .ocard-title {
+    font-size: 20px;
+    max-width: 150px;
+  }
 }
 
 /* extra styles for max-width 450px */
 
 @media (max-width: 450px) {
+  .pcard-title {
+    font-size: 1.3rem;
+    max-width: 270px;
+  }
+
+  .explore-button {
+    font-size: 16px;
+  }
+
+  #ocards-mobile {
+    gap: 15px;
+  }
+
+  .ocard-title {
+    font-size: 16px;
+    max-width: 150px;
+  }
 }

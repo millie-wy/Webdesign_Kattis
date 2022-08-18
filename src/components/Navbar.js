@@ -5,7 +5,7 @@ const Navbar = () => {
   const isDesktop = useMediaQuery({ query: "(min-width: 1024px" });
 
   return isDesktop ? (
-    <div id="menubar">
+    <div id="navbar">
       <ul>
         <li>Houseplants</li>
         <li>Pots</li>
@@ -16,7 +16,7 @@ const Navbar = () => {
       </ul>
     </div>
   ) : (
-    <div id="menubar">
+    <div id="navbar">
       <div className="search-block" />
     </div>
   );

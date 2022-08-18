@@ -4,13 +4,13 @@ body {
   box-sizing: border-box;
 }
 
-/* Houschka Pro Light
-font-family: houschka-pro, sans-serif;
-font-weight: 300;
-font-style: normal;
+/* css shortcuts */
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
-
-Houschka Pro Bold
-font-family: houschka-pro, sans-serif;
-font-weight: 700;
-font-style: normal; */
+.row {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,107 @@
+#contact {
+  width: 100vw;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 40px 5%;
+}
+
+.page-title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+#contact-form {
+  margin: auto;
+  background: rgba(192, 220, 175, 0.3);
+  padding: 30px 60px;
+  width: 40%;
+  min-width: 220px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.green {
+  color: rgb(66, 104, 88);
+  font-weight: bold;
+}
+
+.name-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+}
+
+.name-parts {
+  width: 48%;
+}
+
+input,
+textarea,
+select {
+  margin-top: 5px;
+  border: none;
+  height: 25px;
+  font-family: houschka-pro, sans-serif;
+  color: rgb(66, 104, 88);
+  padding: 0 5px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.submit-button {
+  font-family: houschka-pro, sans-serif;
+  margin: auto;
+  margin-top: 30px;
+  width: fit-content;
+  font-size: 1rem;
+  color: rgb(192, 220, 175);
+  background: rgb(66, 104, 88);
+  font-weight: bold;
+  padding: 5px 20px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+
+/* extra styles for max-width 1024px */
+
+@media (max-width: 1024px) {
+  #contact-form {
+    width: 70%;
+  }
+
+  .name-inputs {
+    flex-direction: column;
+  }
+
+  .name-parts {
+    width: 100%;
+  }
+
+  .form-label,
+  input,
+  textarea,
+  select {
+    font-size: 0.9rem;
+  }
+}
+
+/* extra styles for max-width 640px */
+
+@media (max-width: 640px) {
+  #contact-form {
+    width: 85%;
+    padding: 30px 25px;
+  }
+}

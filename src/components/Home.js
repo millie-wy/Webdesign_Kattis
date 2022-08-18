@@ -1,5 +1,3 @@
-// import "./Stylesheets/Home.css";
-
 import HomeOffer from "./Home/HomeOffer";
 import HomeProduct from "./Home/HomeProducts";
 

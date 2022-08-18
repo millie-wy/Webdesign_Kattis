@@ -1,15 +1,12 @@
+import { useMediaQuery } from "react-responsive";
 import accessories from "../../assets/Images/accessories.jpg";
 import cactus from "../../assets/Images/cactus.jpg";
 import member from "../../assets/Images/member.jpg";
 import presentation from "../../assets/Images/presentation.jpeg";
 import "../Stylesheets/HomeOffer.css";
-import { useMediaQuery } from "react-responsive";
 
 const HomeOffer = () => {
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px" });
-  //   const isTablet = useMediaQuery({ query: "(max-width: 1024px" });
   const isMobile = useMediaQuery({ query: "(max-width: 640px" });
-  const isXLScreen = useMediaQuery({ query: "(min-width: 1600px" });
 
   let offers = [
     {
@@ -38,12 +35,37 @@ const HomeOffer = () => {
       </div>
 
       <div id="offers">
-        {offers.map((offer) => (
-          <div className="offer-card" key={offer.title}>
-            <img src={offer.img} alt={offer.title} className="ocard-img" />
-            <h5 className="ocard-title">{offer.title}</h5>
+        {isMobile ? (
+          <div id="ocards-mobile">
+            <div className="ocard-mobile-l">
+              <img
+                src={offers[0].img}
+                alt={offers[0].title}
+                className="ocard-mobile-l-img"
+              />
+              <h5 className="ocard-title">{offers[0].title}</h5>
+            </div>
+            <div className="ocards-mobile-r">
+              {offers.slice(1).map((offer) => (
+                <div className="ocard-mobile-r" key={offer.title}>
+                  <img
+                    src={offer.img}
+                    alt={offer.title}
+                    className="ocard-mobile-r-img"
+                  />
+                  <h5 className="ocard-title">{offer.title}</h5>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
+        ) : (
+          offers.map((offer) => (
+            <div className="offer-card" key={offer.title}>
+              <img src={offer.img} alt={offer.title} className="ocard-img" />
+              <h5 className="ocard-title">{offer.title}</h5>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );

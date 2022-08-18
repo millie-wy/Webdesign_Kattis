@@ -39,8 +39,9 @@
 }
 
 .product-title {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 1rem 0 0.3rem 0;
+  font-weight: lighter;
 }
 
 .product-height {
@@ -100,8 +101,27 @@
 /* extra styles for max-width 1024px */
 
 @media (max-width: 1024px) {
+  .product-img-div {
+    height: 60%;
+  }
+
+  .product-card {
+    height: 320px;
+  }
+
   .product-detail-div {
+    height: 40%;
     padding: 0 15px;
+  }
+
+  .product-title,
+  .product-price {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+  .product-height {
+    font-size: 0.75rem;
   }
 }
 
