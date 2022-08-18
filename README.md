@@ -4,4 +4,4 @@ Kattis is a mockup online shop that I created from scratch, from idea generation
 
 This project were designed with Photoshop and Illustrator and built with ReactJS.
 
-Link:
+Demo: https://web-kattis.netlify.app/
