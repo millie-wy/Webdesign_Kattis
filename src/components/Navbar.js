@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import "./Stylesheets/Navbar.css";
 
 const Navbar = () => {
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px" });
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   return isDesktop ? (
     <div id="navbar">

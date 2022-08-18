@@ -6,7 +6,7 @@ import presentation from "../../assets/Images/presentation.jpeg";
 import "../Stylesheets/HomeOffer.css";
 
 const HomeOffer = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 640px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   let offers = [
     {

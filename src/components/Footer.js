@@ -7,7 +7,7 @@ import logo from "../assets/Logo/logo-l.png";
 import "./Stylesheets/Footer.css";
 
 const Footer = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 640px" });
+  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   let footerParts = [
     {
@@ -58,7 +58,7 @@ const Footer = () => {
                     alt={link.name}
                     className="socialMedia-icons"
                   />
-                  {!isMobile ? link.name : null}
+                  {!isMobile ? link.name : "".trim()}
                 </Link>
               </li>
             ) : (

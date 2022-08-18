@@ -7,13 +7,11 @@ import logo from "../assets/Logo/logo-s.png";
 import "./Stylesheets/Header.css";
 
 const Header = () => {
-  const isDesktop = useMediaQuery({ query: "(min-width: 1024px" });
-  const isTablet = useMediaQuery({ query: "(max-width: 1024px" });
-  const isMobile = useMediaQuery({ query: "(max-width: 640px" });
+  const isDesktop = useMediaQuery({ query: "(min-width: 1024px)" });
 
   return (
     <div id="header">
-      {isMobile || isTablet ? (
+      {!isDesktop ? (
         <div id="menu-div">
           <img src={menu} alt="menu" className="menu" />
           <Link to="/">
@@ -25,7 +23,9 @@ const Header = () => {
           <img src={logo} alt="Kattis" id="logo-s" />
         </Link>
       )}
+
       {isDesktop ? <div className="search-block" /> : null}
+
       <div id="header-icons">
         <img src={profile} alt="my Kattis" className="profile" />
         <img src={basket} alt="cart" className="basket" />

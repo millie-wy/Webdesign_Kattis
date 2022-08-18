@@ -8,8 +8,8 @@ import moneytree from "../../assets/Images/moneytree.webp";
 import "../Stylesheets/HomeProduct.css";
 
 const HomeProduct = () => {
-  const isXLScreen = useMediaQuery({ query: "(min-width: 1600px" });
-  const isMobile = useMediaQuery({ query: "(max-width: 640px" });
+  const isXLScreen = useMediaQuery({ query: "(min-width: 1600px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
   const [productToShow, setProductsToShow] = useState();
 
   useEffect(() => {
